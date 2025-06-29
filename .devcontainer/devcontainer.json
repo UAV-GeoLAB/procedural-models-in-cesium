@@ -3,7 +3,7 @@
 {
 	"name": "Processing",
 	"build": {
-		"dockerfile": "Dockerfile"
+		"dockerfile": "../Dockerfile"
 	},
 	"customizations": {
     "vscode": {
