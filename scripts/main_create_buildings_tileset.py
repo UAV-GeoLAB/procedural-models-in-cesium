@@ -20,8 +20,9 @@ logger = logging.getLogger(__name__)
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
 
-    TILESET_DIR = "./test/tilesets/homes/"
-    ROOT_URI = "tiles/0/LOD0_0.glb"
+    TILESET_DIR = "./v2/homes/"
+    ROOT_URI = "tiles/0/LOD_0.glb"
+    
     
     TRANSFORM = [-0.5359511808412922,0.8442489749800153,-5.5511151231257334e-17,0,-0.48132577585309216,-0.30555810617824236,0.8215593351962873,0,0.6936006266247354,0.4403156958296417,0.5701230207172975,0,4428723.956849183,2811469.0152269676,3615934.9153855806,1]
 

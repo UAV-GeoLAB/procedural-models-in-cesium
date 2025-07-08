@@ -123,4 +123,3 @@ Zalecane jest uruchamianie projektu w devcontainerze (np. z poziomu Visual Studi
 - Docker zapewnia powtarzalne środowisko z odpowiednią wersją Blendera
 - Devcontainer pozwala wygodnie podłączać lokalne pliki i wolumeny (volumes), co ma kluczowe znaczenie przy przygotowywaniu danych wejściowych (modeli 3D na różnych poziomach szczegółowości LOD)
 - Umożliwia pracę bezpośrednio wewnątrz kontenera z pełnym dostępem do terminala, Blendera i kodu źródłowego
->>>>>>> 15fcdb8 (init)

@@ -16,12 +16,12 @@ from tileset_hierarchy import hierarchical_tiling, add_root, add_children
 
 
 if __name__ == "__main__":
-    TILESET_DIR = "./test/tilesets/agora/"
-    ROOT_URI = "tiles/0/agora_0.glb"
+    TILESET_DIR = "./v2/public/"
+    ROOT_URI = "tiles/0/publiczne_0.glb"
     TRANSFORM = [-0.5359511808412922,0.8442489749800153,-5.5511151231257334e-17,0,-0.48132577585309216,-0.30555810617824236,0.8215593351962873,0,0.6936006266247354,0.4403156958296417,0.5701230207172975,0,4428723.956849183,2811469.0152269676,3615934.9153855806,1]
 
-    MEDIUM_LOD_DIR = "./test/agora/tiles/1"
-    HIGH_LOD_DIR = "./test/agora/tiles/2"
+    MEDIUM_LOD_DIR = "./v2/public/tiles/1"
+    HIGH_LOD_DIR = "./v2/public/tiles/2"
 
     # Init tileset and create root
     root_uri = os.path.join(TILESET_DIR, ROOT_URI)
@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     tileset = {  "asset": { "version": "1.1" }  } ## add header
     root_bbox = Bbox(root_model)
-    add_root(tileset, root_bbox.getCesiumBoundingVolumeBox(), 5, TRANSFORM, ROOT_URI)
+    add_root(tileset, root_bbox.getCesiumBoundingVolumeBox(), 20, TRANSFORM, ROOT_URI)
     tileset["root"]["children"] = []
 
     root_node = TileNode(name="root")
@@ -41,9 +41,9 @@ if __name__ == "__main__":
             child_bbox = Bbox(child_model)
             lvl1_node = TileNode(name=f"tiles/1/{filename}", data=child_model)
             root_node.add_child(lvl1_node)
-            child = add_children(tileset["root"]["children"], child_bbox.getCesiumBoundingVolumeBox(), 2, lvl1_node.name)
+            child = add_children(tileset["root"]["children"], child_bbox.getCesiumBoundingVolumeBox(), 10, lvl1_node.name)
             high_lod_path = f"tiles/2/{filename}"
-            add_children(child["children"], child_bbox.getCesiumBoundingVolumeBox(), 0.5, high_lod_path)
+            add_children(child["children"], child_bbox.getCesiumBoundingVolumeBox(), 2, high_lod_path)
             print(child)
 
 
