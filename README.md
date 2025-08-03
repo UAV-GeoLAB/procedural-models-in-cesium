@@ -129,3 +129,9 @@ Why use a dev container?
 - Docker ensures a consistent Blender environment.
 - Dev containers simplify file sharing between host and container.
 - Full terminal access to Blender and source code within the container.
+
+## License
+This project is licensed under the Creative Commons Attribution-NonCommercial (CC BY-NC) license.
+This means you are free to use, share, and modify the code as long as you give appropriate credit and do not use it for commercial purposes.
+
+Full license details: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
